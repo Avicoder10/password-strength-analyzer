@@ -1,0 +1,209 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0a0f1c;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.card {
+    width: 100%;
+    max-width: 600px;
+    background: #111827;
+    border: 1px solid #263247;
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #9ca3af;
+    margin-bottom: 30px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.password-box {
+    display: flex;
+    gap: 10px;
+}
+
+.password-box input {
+    flex: 1;
+    padding: 14px;
+    border: 1px solid #374151;
+    border-radius: 10px;
+    background: #0b1220;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.password-box input:focus {
+    border-color: #22c55e;
+}
+
+.password-box button {
+    padding: 0 18px;
+    border: none;
+    border-radius: 10px;
+    background: #1f2937;
+    color: white;
+    cursor: pointer;
+}
+
+.password-box button:hover {
+    background: #374151;
+}
+
+.strength-section {
+    margin-top: 25px;
+}
+
+.strength-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#strengthText {
+    color: #9ca3af;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #1f2937;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#strengthBar {
+    width: 0%;
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.score {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.checks {
+    display: grid;
+    gap: 12px;
+}
+
+.checks div {
+    background: #0b1220;
+    padding: 12px;
+    border-radius: 8px;
+    color: #d1d5db;
+}
+
+.suggestions {
+    margin-top: 25px;
+    padding: 18px;
+    background: #0b1220;
+    border-radius: 10px;
+}
+
+.suggestions h3 {
+    margin-bottom: 12px;
+}
+
+.suggestions ul {
+    padding-left: 20px;
+    color: #9ca3af;
+}
+
+.suggestions li {
+    margin-bottom: 8px;
+}
+
+.security-note {
+    text-align: center;
+    margin-top: 25px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 15px;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .password-box {
+        flex-direction: column;
+    }
+
+    .password-box button {
+        padding: 12px;
+    }
+}
+.report-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#copyReport {
+    width: 100%;
+    padding: 14px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#copyReport:hover {
+    background: #1d4ed8;
+}
+
+#copyStatus {
+    margin-top: 10px;
+    color: #22c55e;
+    font-size: 14px;
+}
+
+
